@@ -5,8 +5,13 @@
 
 body {
   background: #fcc;
-} 
+  margin:0;
+}
 
+*{
+  box-sizing: border-box;
+  margin:0;
+}
 
 
 /* TABLET STYLES */
@@ -14,10 +19,10 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
 }
 
 
@@ -30,5 +35,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
