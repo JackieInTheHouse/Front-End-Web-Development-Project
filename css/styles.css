@@ -8,17 +8,18 @@ body {
   margin:0;
   padding:0;
 }
-
+/* Logo and Nav css section*/
 .logo {
   position:absolute;
-  color:white;
+  color: #FFFFFF;
   margin-top: 1.25em;
   margin-left: 1.25em;
+  display:flex;
 }
 
-
 nav {
-  display: flex;
+  display: none;
+  clear: both;
   justify-content: center;
   background:#333;
   flex-direction: column;
@@ -26,15 +27,16 @@ nav {
 }
 
 nav a {
-  padding: 1.25em 1.5em;
-  color: white;
+  padding: 1.25em 2em;
+  color: #FFFFFF;
   text-decoration: none;
   display:inline-block;
 }
 
  .navbar {
-   background:white;
+   background:#555;
    line-height: 2em;
+   text-align: center;
    color:#039;
  }
 
@@ -46,6 +48,45 @@ nav a {
   box-sizing: border-box;
   margin:0;
 }
+/* End of Logo and Nav css section*/
+
+/*Logo home content css section*/
+
+.logo-home-content{
+  padding-left: 20px;
+  padding-top: 50px;
+  position:absolute;
+  overflow: auto;
+}
+
+.logo-home .logo-home-content h6{
+  color:#FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logo-home .logo-home-content h1{
+  color:#FFFFFF;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.logo-home .logo-home-content h3{
+  color:#0000FF;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 50%;
+  float: right;
+}
+
+/*End of Logo home content css section*/
 
 
 /* TABLET STYLES */
@@ -62,6 +103,9 @@ nav a {
   body {
     background: #cfc;
   }
+
+  .navbar {
+    display: none;
 }
 
 
