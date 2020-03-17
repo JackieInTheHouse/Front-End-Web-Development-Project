@@ -4,24 +4,26 @@
 /* and above unless overwritten below */
 
 body {
-  background: #fcc;
+  background: #A9A9A9;
   margin:0;
   padding:0;
 }
 /* Logo and Nav css section*/
+
+header {
+  background:#333;
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-  position:absolute;
-  color: #FFFFFF;
+  color:#FFFFFF;
   margin-top: 1.25em;
   margin-left: 1.25em;
-  display:flex;
 }
 
 nav {
   display: none;
-  clear: both;
-  justify-content: center;
-  background:#333;
   flex-direction: column;
 
 }
@@ -33,15 +35,21 @@ nav a {
   display:inline-block;
 }
 
- .navbar {
-   background:#555;
-   line-height: 2em;
-   text-align: center;
-   color:#039;
+nav a:hover {
+  color:#B8860B;
+}
+
+.navbar {
+  background:#555;
+  line-height: 2em;
+  text-align: center;
+  color:#039;
+  font-size: 20px;
+  font-weight: bold;
  }
 
 .nav-toggle {
-  display:flex;
+  display: flex;
 }
 
 *{
