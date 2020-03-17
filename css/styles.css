@@ -62,12 +62,12 @@ nav a:hover {
 section {
   display:flex;
   justify-content: space-between;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 .logo-home-content{
-  padding-left: 20px;
-  padding-top: 50px;
+  padding-left: 80px;
+  padding-top: 80px;
 }
 
 .logo-home .logo-home-content h6{
@@ -91,7 +91,7 @@ section {
 img {
   max-width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-right: 10px;
   width: 50%;
   float: right;
@@ -130,6 +130,7 @@ img {
 
 /* Start of Education CSS*/
 .Education {
+  padding: 100px 20px;
   color:#FFFFFF;
 }
 
@@ -137,6 +138,7 @@ img {
   column-count:2;
   column-gap: 40px;
 }
+
 .Education-content h1 {
   margin:0;
   position: relative;
@@ -165,7 +167,7 @@ img {
    }
 
   body {
-    background: #cfc;
+    background: #000000;
   }
 
   .navbar {
@@ -184,7 +186,5 @@ img {
       flex-direction: row;
     }
 
-  body {
-    background: #ccf;
-  }
+
 }
