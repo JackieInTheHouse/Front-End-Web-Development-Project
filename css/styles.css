@@ -42,13 +42,13 @@ nav a:hover {
 .navbar {
   background:#555;
   line-height: 2em;
-  text-align: center;
+  text-align: right;
   color:#039;
   font-size: 20px;
   font-weight: bold;
  }
 
-.nav-toggle {
+.navbar-toggle {
   display: flex;
 }
 
@@ -59,12 +59,15 @@ nav a:hover {
 /* End of Logo and Nav css section*/
 
 /*Logo home content css section*/
+section {
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 300px;
+}
 
 .logo-home-content{
   padding-left: 20px;
   padding-top: 50px;
-  position:absolute;
-  overflow: auto;
 }
 
 .logo-home .logo-home-content h6{
