@@ -99,7 +99,32 @@ img {
 
 /*End of Logo home content css section*/
 
+/* Start of Personal Profile css*/
 
+.Personal-Profile {
+  padding: 100px 20px;
+  color:#FFFFFF;
+}
+
+.Personal-Profile-content img {
+  float: left;
+
+}
+
+.Personal-Profile-content h1 {
+  margin:0;
+  position: relative;
+}
+
+.Personal-Profile-content h1::before {
+    content:'';
+    left: 0px;
+    position:absolute;
+    height: 2px;
+    right: 80%;
+    background-color: #48D1CC;
+    bottom: -2px;
+}
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
