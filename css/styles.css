@@ -125,6 +125,34 @@ img {
     background-color: #48D1CC;
     bottom: -2px;
 }
+
+/* End of Personal Profile css*/
+
+/* Start of Education CSS*/
+.Education {
+  color:#FFFFFF;
+}
+
+.Education-content {
+  column-count:2;
+  column-gap: 40px;
+}
+.Education-content h1 {
+  margin:0;
+  position: relative;
+}
+
+.Education-content h1::before {
+    content:'';
+    left: 0px;
+    position:absolute;
+    height: 2px;
+    right: 80%;
+    background-color: #48D1CC;
+    bottom: -2px;
+}
+/* End of Education CSS*/
+
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
