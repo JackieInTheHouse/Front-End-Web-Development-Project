@@ -80,13 +80,15 @@ section {
   font-weight: 500;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.logo-home img {
   padding-top: 20px;
   padding-right: 10px;
   width: 50%;
   float: right;
+}
+
+.logo-home img:hover {
+    transform: scaleX(-1);
 }
 
 /*End of Logo home content css section*/
@@ -100,6 +102,11 @@ img {
 
 .Personal-Profile-content img {
   float: left;
+  padding-top: 20px;
+  padding-right: 10px;
+  width: 50%;
+  width: 600px;
+  height: 400px;
 
 }
 
@@ -113,7 +120,7 @@ img {
     left: 0px;
     position:absolute;
     height: 2px;
-    right: 80%;
+    right: 90%;
     background-color: #48D1CC;
     bottom: -2px;
 }
@@ -126,11 +133,6 @@ img {
   color:#FFFFFF;
 }
 
-.Education-content {
-  column-count:2;
-  column-gap: 40px;
-}
-
 .Education-content h1 {
   margin:0;
   position: relative;
@@ -141,9 +143,29 @@ img {
     left: 0px;
     position:absolute;
     height: 2px;
-    right: 80%;
+    right: 90%;
     background-color: #48D1CC;
     bottom: -2px;
+}
+
+.education-place {
+  margin: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 600px;
+}
+
+.education-place img {
+  /* width: 100%;
+  height: auto; */
+  width: 600px;
+  height: 400px;
+}
+
+.text {
+  padding:5px;
+  text-align: center;
+  background-color: #708090;
 }
 /* End of Education CSS*/
 
@@ -160,13 +182,13 @@ img {
 }
 
 .Work-Experience-heading h1::before {
-    content:'';
-    left: 0px;
-    position:absolute;
-    height: 2px;
-    right: 80%;
-    background-color: #48D1CC;
-    bottom: -2px;
+  content:'';
+  left: 0px;
+  position:absolute;
+  height: 2px;
+  right: 90%;
+  background-color: #48D1CC;
+  bottom: -2px;
 }
 
 .timeperiod {
