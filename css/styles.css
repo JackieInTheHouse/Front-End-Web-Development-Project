@@ -10,21 +10,13 @@ body {
 }
 /* Logo and Nav css section*/
 
-header {
-  background:#333;
-  display: flex;
-  justify-content: space-between;
-}
 
-.logo {
-  color:#FFFFFF;
-  margin-top: 1.25em;
-  margin-left: 1.25em;
-}
 
 nav {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  background:#333;
 
 }
 
@@ -42,7 +34,7 @@ nav a:hover {
 .navbar {
   background:#555;
   line-height: 2em;
-  text-align: right;
+  text-align: center;
   color:#039;
   font-size: 20px;
   font-weight: bold;
