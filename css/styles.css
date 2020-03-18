@@ -100,13 +100,16 @@ section {
   color:#FFFFFF;
 }
 
+.myself {
+  margin: 50px;
+}
+
 .Personal-Profile-content img {
   float: left;
-  padding-top: 20px;
-  padding-right: 10px;
   width: 50%;
   width: 600px;
   height: 400px;
+  margin-right: 15px;
 
 }
 
