@@ -292,6 +292,52 @@ input[type=submit]:hover {
 }
 /* End of Contact Me CSS*/
 
+/* Start Footer CSS */
+
+.footer {
+  background: #FFFFFF;
+  align-content: center;
+}
+
+.text-muted {
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #2b4170;
+  color: white;
+}
+
+.fa-twitter {
+  background: #0081ce;
+  color: white;
+}
+
+.fa-google-plus {
+  background: #c33219;
+  color: white;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+/* End Footer CSS */
+
+
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
