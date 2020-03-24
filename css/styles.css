@@ -25,6 +25,8 @@ nav a {
   color: #FFFFFF;
   text-decoration: none;
   display:inline-block;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -54,6 +56,7 @@ nav a:hover {
 section {
   display:flex;
   justify-content: space-between;
+  flex-direction: column;
   padding-bottom: 200px;
 }
 
@@ -83,8 +86,12 @@ section {
 .logo-home img {
   padding-top: 20px;
   padding-right: 10px;
-  width: 50%;
-  float: right;
+  /* width: 50%;
+  float: right; */
+  max-width: 100%;
+  max-height: 400px;
+  margin-right:15px;
+  margin-left: 15px;
 }
 
 .logo-home img:hover {
@@ -101,14 +108,14 @@ section {
 }
 
 .myself {
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .Personal-Profile-content img {
   float: left;
-  width: 50%;
-  width: 600px;
-  height: 400px;
+  /* width: 50%; */
+  max-width: 100%;
+  max-height: 400px;
   margin-right: 15px;
 
 }
@@ -152,16 +159,16 @@ section {
 }
 
 .education-place {
-  margin: 50px;
+  margin: 50px 0;
   border: 1px solid #ccc;
   float: left;
-  width: 600px;
+  /* width: 600px; */
 }
 
 .education-place img {
   /* width: 100%;
   height: auto; */
-  width: 600px;
+  width: 100%;
   height: 400px;
 }
 
@@ -206,7 +213,7 @@ section {
   padding: 5em;
   list-style: none;
   text-align: center;
-  width: 60%;
+  /* width: 60%; */
 }
 
 .timeperiod h3 {
@@ -229,7 +236,7 @@ section {
 
 .timeperiod .date::before {
   content: attr(date-period);
-  left: -19em;
+  left: -18em;
   text-align: right;
   min-width: 12em;
   font-size: 1em;
@@ -251,10 +258,22 @@ section {
 .Contact-Me {
   padding: 100px 20px;
   color:#FFFFFF;
+  flex-direction: column;
 }
 
 .Contact-Me h1 {
+  margin:0;
   position: relative;
+}
+
+.Contact-Me h1::before {
+  content:'';
+  left: 0px;
+  position:absolute;
+  height: 2px;
+  right: 90%;
+  background-color: #48D1CC;
+  bottom: -2px;
 }
 
 .Contact-Me .container {
@@ -262,7 +281,7 @@ section {
   background-color: #DCDCDC;
   padding: 20px;
   color: #000000;
-  width: 600px;
+  /* width: 600px; */
   position: relative;
 }
 
@@ -355,7 +374,23 @@ input[type=submit]:hover {
 
   .navbar {
     display: none;
+  }
+
+  .logo-home {
+    flex-direction: row;
+ }
+  .logo-home img {
+    max-width: 50%;
+ }
+
+/* align form to the center wont work */
+  .Contact-Me .container {
+    width: 600px;
+    display: center;
+  }
+
 }
+
 
 
 
@@ -368,6 +403,8 @@ input[type=submit]:hover {
   nav {
       flex-direction: row;
     }
-
+  .education-place {
+     margin-right: 100px;
+    }
 
 }
