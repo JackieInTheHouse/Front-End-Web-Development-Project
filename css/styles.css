@@ -58,6 +58,8 @@ section {
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 200px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .logo-home-content{
