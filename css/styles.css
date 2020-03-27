@@ -320,7 +320,7 @@ input[type=submit]:hover {
 
 .footer {
   background: #FFFFFF;
-  align-content: center;
+  text-align: center;
 }
 
 .text-muted {
@@ -328,8 +328,8 @@ input[type=submit]:hover {
   font-weight: bold;
 }
 .fa {
-  padding: 20px;
-  width: 50px;
+  padding: 0.5em;
+  width: 2em;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 20%;
