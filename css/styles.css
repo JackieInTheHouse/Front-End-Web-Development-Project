@@ -388,11 +388,6 @@ input[type=submit]:hover {
     max-width: 50%;
  }
 
-/* align form to the center wont work */
-  .Contact-Me .container {
-    width: 600px;
-    display: center;
-  }
 
 }
 
