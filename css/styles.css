@@ -64,39 +64,46 @@ section {
 
 /*Logo home content css section*/
 
-.logo-home{
+.home{
   background-image: url(../images/bubbles.jpg);
   background-size:cover;
+  padding: 20px;
 }
 
-.logo-home-content{
+/* .home-content{
   padding-left: 80px;
   padding-top: 80px;
-}
+} */
 
-.logo-home .logo-home-content h6{
+.home .home-content h6{
   color:#FFFFFF;
   font-size: 20px;
   font-weight: 500;
 }
 
-.logo-home .logo-home-content h1{
+.home .home-content h1{
   color:#FFFFFF;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 600;
 }
 
-.logo-home .logo-home-content h3{
-  color:#00FFFF;
+.home .home-content h3{
+  color:#008B8B;
   font-size: 30px;
   font-weight: 500;
 }
 
-.logo-home img {
+.info {
+  color:#000000;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .home img {
   padding-top: 20px;
   padding-right: 10px;
-  /* width: 50%;
-  float: right; */
   max-width: 100%;
   max-height: 400px;
   margin-right:15px;
@@ -105,7 +112,7 @@ section {
 
 .logo-home img:hover {
     transform: scaleX(-1);
-}
+} */
 
 /*End of Logo home content css section*/
 
@@ -400,12 +407,13 @@ input[type=submit]:hover {
     display: none;
   }
 
-  .logo-home {
+  .home {
     flex-direction: row;
+    padding: 50px;
  }
-  .logo-home img {
+  /* .home img {
     max-width: 50%;
- }
+ } */
 
 
 }
