@@ -118,7 +118,7 @@ section {
 
 /* Start of Personal Profile css*/
 
-.Personal-Profile {
+.personal-profile {
   padding: 100px 20px;
   color:#FFFFFF;
 }
@@ -140,47 +140,47 @@ section {
     transform: scaleX(-1);
 }
 
-.Personal-Profile-content h1 {
+.personal-profile-content h1 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.Personal-Profile-content h1::before {
+.personal-profile-content h1::before {
     content:'';
     left: 0px;
     position:absolute;
     height: 2px;
     right: 92%;
-    background-color: #48D1CC;
+    background-color: #FFFF00;
     bottom: -2px;
 }
 
-.Personal-Profile-content p {
+.personal-profile-content p {
   margin: 20px;
 }
 
 /* End of Personal Profile css*/
 
 /* Start of Education CSS*/
-.Education {
+.education {
   padding: 100px 20px;
   color:#FFFFFF;
 }
 
-.Education-content h1 {
+.education-content h1 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.Education-content h1::before {
+.education-content h1::before {
     content:'';
     left: 0px;
     position:absolute;
     height: 2px;
     right: 95%;
-    background-color: #48D1CC;
+    background-color: #FFFF00;
     bottom: -2px;
 }
 
@@ -216,7 +216,7 @@ section {
 
 }
 
-.Work-Experience-heading h1::before {
+.work-experience-heading h1::before {
   content:'';
   left: 0px;
   position:absolute;
@@ -291,29 +291,29 @@ section {
 
 /* Start of Contact Me CSS*/
 
-.Contact-Me {
+.contact-me {
   padding: 100px 20px;
   color:#FFFFFF;
   flex-direction: column;
 }
 
-.Contact-Me h1 {
+.contact-me h1 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.Contact-Me h1::before {
+.contact-me h1::before {
   content:'';
   left: 0px;
   position:absolute;
   height: 2px;
   right: 94%;
-  background-color: #48D1CC;
+  background-color: #FFFF00;
   bottom: -2px;
 }
 
-.Contact-Me .container {
+.contact-me .container {
   border-radius: 5px;
   background-color: #DCDCDC;
   padding: 20px;
