@@ -141,6 +141,7 @@ section {
 }
 
 .Personal-Profile-content h1 {
+  color: #000000;
   margin:0;
   position: relative;
 }
@@ -168,6 +169,7 @@ section {
 }
 
 .Education-content h1 {
+  color: #000000;
   margin:0;
   position: relative;
 }
@@ -296,6 +298,7 @@ section {
 }
 
 .Contact-Me h1 {
+  color: #000000;
   margin:0;
   position: relative;
 }
@@ -402,10 +405,6 @@ input[type=submit]:hover {
      display:flex;
      flex-direction: row;
    }
-
-  body {
-    background: #5F9EA0;
-  }
 
   .navbar {
     display: none;
