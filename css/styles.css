@@ -52,7 +52,7 @@ nav a:hover {
 }
 /* End of Logo and Nav css section*/
 
-/*Logo home content css section*/
+
 section {
   display:flex;
   justify-content: space-between;
@@ -60,6 +60,13 @@ section {
   padding-bottom: 200px;
   max-width: 800px;
   margin: auto;
+}
+
+/*Logo home content css section*/
+
+.logo-home{
+  background-image: url(../images/bubbles.jpg);
+  background-size:cover;
 }
 
 .logo-home-content{
