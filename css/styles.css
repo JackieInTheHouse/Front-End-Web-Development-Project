@@ -184,12 +184,13 @@ section {
 /* End of Education CSS*/
 
 /* Start of Work Experience CSS*/
-.Work-Experience {
+.work-experience {
   padding: 100px 20px;
   color:#FFFFFF;
 }
 
-.Work-Experience-heading h1 {
+.work-experience-heading h1 {
+  color: #000000;
   margin:0;
   position: relative;
 
@@ -201,54 +202,65 @@ section {
   position:absolute;
   height: 2px;
   right: 91%;
-  background-color: #48D1CC;
+  background-color: #FFFF00;
   bottom: -2px;
 }
 
-.timeperiod {
-  padding: 40px 100px;
+.work-time {
+  padding-top: 60px;
 }
 
-.timeperiod ul {
-  border-left: 4px solid #FF8C00;
-  border-radius: 0.2em;
+.work-time ul {
+  border-left: 4px solid #8A2BE2;
+  border-radius: 0em;
+  background-color: rgba(0,0,0,0.05);
   margin: 0 auto;
   position: relative;
   padding: 5em;
   list-style: none;
-  text-align: center;
-  /* width: 60%; */
+  text-align: left;
+  width: 90%;
 }
 
-.timeperiod h3 {
-  margin-bottom: 1em;
+.work-time h3 {
+  margin-bottom: 0.25em;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
-.timeperiod .date {
+.work-time .date {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
   position: relative;
   margin-bottom: 1em;
-
+  padding-bottom: 1em;
 }
 
-.timeperiod .date::before,
-.timeperiod .date::after {
+.work-time .date:last-of-type{
+  border: none;
+}
+
+.work-time .date::before,
+.work-time .date::after {
   position: absolute;
   display: block;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.timeperiod .date::before {
-  content: attr(date-period);
-  left: -18em;
-  text-align: right;
+.work-time .date::before {
+  content: attr(data-date);
+  top: -1em;
+  padding: 5px;
+  color:#0000FF;
+  text-align: left;
   min-width: 12em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
-.timeperiod .date::after {
+.work-time .date::after {
   content:'';
-  box-shadow: 0 0 0 2px #8A2BE2;
+  box-shadow: 0 0 0 4px #008B8B;
   border-radius: 100%;
   left: -5.6em;
   height: 1em;
