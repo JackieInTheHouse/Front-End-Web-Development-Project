@@ -168,13 +168,13 @@ section {
   color:#FFFFFF;
 }
 
-.education-content h1 {
+.education h1 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.education-content h1::before {
+.education h1::before {
     content:'';
     left: 0px;
     position:absolute;
@@ -200,6 +200,13 @@ section {
   padding:5px;
   text-align: center;
   background-color: #708090;
+}
+
+.education-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  padding: 10px;
 }
 /* End of Education CSS*/
 
