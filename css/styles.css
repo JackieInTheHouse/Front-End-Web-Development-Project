@@ -12,9 +12,8 @@ body {
   margin:0;
   padding:0;
 }
-/* Logo and Nav css section*/
 
-
+/* Nav css section*/
 
 nav {
   display: none;
@@ -31,6 +30,7 @@ nav a {
   display:inline-block;
   font-size: 1.25em;
   font-weight: bold;
+  transition: 0.6s;
 }
 
 nav a:hover {
@@ -66,6 +66,10 @@ section {
   margin: auto;
 }
 
+
+
+/*Logo home content css section*/
+
 section.home {
   max-width: unset;
   width: 100%;
@@ -73,14 +77,6 @@ section.home {
   background-image: url(../images/bubbles.jpg);
   background-size:cover;
 }
-
-/*Logo home content css section*/
-
-/* .home{
-  background-image: url(../images/bubbles.jpg);
-  background-size:cover;
-    padding:20px;
-} */
 
 .home-content{
  text-align: center;
@@ -118,19 +114,6 @@ section.home {
   padding: 5px;
 }
 
-/* .home img {
-  padding-top: 20px;
-  padding-right: 10px;
-  max-width: 100%;
-  max-height: 400px;
-  margin-right:15px;
-  margin-left: 15px;
-}
-
-.logo-home img:hover {
-    transform: scaleX(-1);
-} */
-
 /*End of Logo home content css section*/
 
 /* Start of Personal Profile css*/
@@ -145,15 +128,16 @@ section.home {
 }
 
 .myself img {
-  float: left;
   width: 100%;
-  max-height: 500px;
   margin-right: 15px;
   margin-bottom: 15px;
+  transition: 0.3s;
+  opacity: 0.5;
 }
 
 .myself img:hover {
-    transform: scaleX(-1);
+    transform: scale(1.05);
+    opacity: 1;
 }
 
 .profile-text p {
@@ -182,13 +166,13 @@ section.home {
 }
 
 .personal-profile-content h1::before {
-    content:'';
-    left: 0px;
-    position:absolute;
-    height: 2px;
-    right: 92%;
-    background-color: #FFFF00;
-    bottom: -2px;
+  content:'';
+  left: 0px;
+  position:absolute;
+  height: 2px;
+  right: 92%;
+  background-color: #FFFF00;
+  bottom: -2px;
 }
 
 .personal-profile-content p {
@@ -210,25 +194,25 @@ section.home {
 }
 
 .education h1::before {
-    content:'';
-    left: 0px;
-    position:absolute;
-    height: 2px;
-    right: 95%;
-    background-color: #FFFF00;
-    bottom: -2px;
+  content:'';
+  left: 0px;
+  position:absolute;
+  height: 2px;
+  right: 95%;
+  background-color: #FFFF00;
+  bottom: -2px;
 }
 
 .education-place {
   margin: 50px 0;
   border: 1px solid #ccc;
   float: left;
-  /* width: 600px; */
+  width: 100%;
 }
 
 .education-place img {
-  max-width: 100%;
-  max-height: 400px;
+  width: 100%;
+  transition: 0.3s;
 }
 .education-place img:hover {
   opacity: 0.6;
@@ -240,12 +224,6 @@ section.home {
   background-color: #708090;
 }
 
-/* .education-content {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10px;
-  padding: 10px;
-} */
 /* End of Education CSS*/
 
 /* Start of Work Experience CSS*/
@@ -277,14 +255,14 @@ section.home {
 
 .work-time ul {
   border-left: 4px solid #8A2BE2;
-  border-radius: 0em;
+  border-radius: 0;
   background-color: rgba(0,0,0,0.05);
   margin: 0 auto;
   position: relative;
   padding: 5em;
   list-style: none;
   text-align: left;
-  width: 90%;
+  width: 100%;
 }
 
 .work-time h3 {
@@ -295,7 +273,7 @@ section.home {
 }
 
 .work-time .date {
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.8);
   position: relative;
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -411,7 +389,7 @@ input[type=submit]:hover {
 }
 
 .fa:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .fa-facebook {
@@ -444,8 +422,8 @@ input[type=submit]:hover {
   /* applies to screens wider than 499px */
 
   nav {
-     display:flex;
-     flex-direction: row;
+    display:flex;
+    flex-direction: row;
    }
 
   .navbar {
@@ -456,10 +434,6 @@ input[type=submit]:hover {
     flex-direction: row;
     padding: 50px;
  }
-  /* .home img {
-    max-width: 50%;
- } */
-
 
 }
 
@@ -475,11 +449,6 @@ input[type=submit]:hover {
   nav {
       flex-direction: row;
     }
-
-
-  /* .logo-home img {
-    width: 80%;
- } */
 
   .education-place {
      margin-right: 100px;
