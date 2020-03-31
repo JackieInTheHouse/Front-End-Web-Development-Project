@@ -143,6 +143,7 @@ section.home {
 .profile-text p {
   animation-duration: 2s;
   animation-name: slidein;
+  margin: 20px;
 }
 
 @keyframes slidein {
@@ -159,13 +160,13 @@ section.home {
   }
 }
 
-.personal-profile-content h1 {
+.personal-profile h1 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.personal-profile-content h1::before {
+.personal-profile h1::before {
   content:'';
   left: 0px;
   position:absolute;
@@ -175,9 +176,6 @@ section.home {
   bottom: -2px;
 }
 
-.personal-profile-content p {
-  margin: 20px;
-}
 
 /* End of Personal Profile css*/
 
@@ -232,14 +230,14 @@ section.home {
   color:#FFFFFF;
 }
 
-.work-experience-heading h1 {
+.work-experience h1 {
   color: #000000;
   margin:0;
   position: relative;
 
 }
 
-.work-experience-heading h1::before {
+.work-experience h1::before {
   content:'';
   left: 0px;
   position:absolute;
