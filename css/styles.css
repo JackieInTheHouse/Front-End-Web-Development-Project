@@ -82,10 +82,9 @@ section.home {
     padding:20px;
 } */
 
-/* .home-content{
-  padding-left: 80px;
-  padding-top: 80px;
-} */
+.home-content{
+ text-align: center;
+}
 
 .home .home-content h6{
   color:#FFFFFF;
@@ -112,7 +111,11 @@ section.home {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
+}
+
+.info label {
+  padding: 5px;
 }
 
 /* .home img {
