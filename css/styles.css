@@ -60,7 +60,7 @@ nav a:hover {
 
 section {
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   padding-bottom: 200px;
   max-width: 800px;
@@ -144,13 +144,13 @@ section.home {
   }
 }
 
-.personal-profile h1 {
+.personal-profile h2 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.personal-profile h1::before {
+.personal-profile h2::before {
   content:'';
   left: 0px;
   position:absolute;
@@ -166,7 +166,6 @@ section.home {
   margin-top: 50px;
 }
 
-/* Hide the images by default */
 .myImages {
   display: none;
 }
@@ -184,8 +183,6 @@ section.home {
     opacity: 0.5;
 }
 
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -196,23 +193,20 @@ section.home {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.5s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
 
-/* Caption text */
 .ptext {
   color: #2F4F4F;
   font-size: 15px;
@@ -223,16 +217,14 @@ section.home {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .imagetext{
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 14px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -261,13 +253,13 @@ section.home {
   color:#FFFFFF;
 }
 
-.education h1 {
+.education h2 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.education h1::before {
+.education h2::before {
   content:'';
   left: 0px;
   position:absolute;
@@ -306,14 +298,14 @@ section.home {
   color:#FFFFFF;
 }
 
-.work-experience h1 {
+.work-experience h2 {
   color: #000000;
   margin:0;
   position: relative;
 
 }
 
-.work-experience h1::before {
+.work-experience h2::before {
   content:'';
   left: 0px;
   position:absolute;
@@ -393,13 +385,13 @@ section.home {
   flex-direction: column;
 }
 
-.contact-me h1 {
+.contact-me h2 {
   color: #000000;
   margin:0;
   position: relative;
 }
 
-.contact-me h1::before {
+.contact-me h2::before {
   content:'';
   left: 0px;
   position:absolute;
@@ -415,7 +407,7 @@ section.home {
   padding: 20px;
   color: #000000;
   position: relative;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 input[type=text],[type=email], textarea {
@@ -506,7 +498,6 @@ input[type=submit]:hover {
 
   .home {
     flex-direction: row;
-    padding: 50px;
  }
 
  body {
@@ -528,8 +519,5 @@ input[type=submit]:hover {
       flex-direction: row;
     }
 
-  .education-place {
-     margin-right: 100px;
-    }
 
 }

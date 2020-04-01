@@ -43,5 +43,6 @@ function showImages(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   images[imageIndex-1].style.display = "block";
-  dots[imageIndex-1].className += " active";
+  // dots[imageIndex-1].className += " active";
+  dots[imageIndex-1].classList.add("active");
 }
