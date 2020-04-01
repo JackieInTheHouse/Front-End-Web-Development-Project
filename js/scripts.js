@@ -2,6 +2,7 @@
 
 console.log("hello");
 
+/* Menu bar script*/
 const navbarToggle = document.getElementById("navbar-toggle");
 const menuNav = document.getElementById("menu-nav");
 
@@ -14,32 +15,33 @@ navbarToggle.addEventListener("click", toggleMenu);
 
 /* slide show script*/
 
-let slideIndex = 1;
-showSlides(slideIndex);
+let imageIndex = 1;
+showImages(imageIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusImages(n) {
+  showImages(imageIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentImage(n) {
+  showImages(imageIndex = n);
 }
 
-function showSlides(n) {
+function showImages(n) {
   let i;
-  const slides = document.getElementsByClassName("myImages");
+  const images = document.getElementsByClassName("myImages");
   const dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+
+  if (n > images.length) {
+    imageIndex = 1}
+  if (n < 1) {
+    imageIndex = images.length}
+  for (i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
   }
 
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  images[imageIndex-1].style.display = "block";
+  dots[imageIndex-1].className += " active";
 }
