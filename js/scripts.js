@@ -29,6 +29,12 @@ function currentImage(n) {
 function showImages(n) {
   let i;
   const images = document.getElementsByClassName("myImages");
+  // for(const image in images) {
+  //   const dot = document.createElement('span');
+  //   dot.classList.add('dot');
+  // }
+  // dot.addEventListener
+
   const dots = document.getElementsByClassName("dot");
 
   if (n > images.length) {
@@ -46,6 +52,7 @@ function showImages(n) {
   dots[imageIndex-1].classList.add("active");
 }
 
+/* prev and next script*/
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
