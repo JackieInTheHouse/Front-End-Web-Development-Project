@@ -36,13 +36,15 @@ function showImages(n) {
   if (n < 1) {
     imageIndex = images.length}
   for (i = 0; i < images.length; i++) {
-      images[i].style.display = "none";
+      // images[i].style.display = "none";
+        images[i].classList.remove("active");
   }
 
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].classList.remove("active");
+      // dots[i].className = dots[i].className.replace(" active", "");
   }
-  images[imageIndex-1].style.display = "block";
-  // dots[imageIndex-1].className += " active";
+  // images[imageIndex-1].style.display = "block";
+  images[imageIndex-1].classList.add("active");
   dots[imageIndex-1].classList.add("active");
 }

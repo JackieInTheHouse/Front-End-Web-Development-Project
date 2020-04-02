@@ -183,6 +183,15 @@ section.home {
     opacity: 0.5;
 }
 
+img.myImages{
+  display: none;
+}
+
+img.myImages.active {
+  display: block;
+}
+
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -238,6 +247,10 @@ section.home {
 
 .dot:hover {
   background-color: #FFFFFF;
+}
+
+.dot.active {
+  background-color: #FFD700;
 }
 
 .dots {
