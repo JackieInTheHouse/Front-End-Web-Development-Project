@@ -183,11 +183,11 @@ section.home {
     opacity: 0.5;
 }
 
-img.myImages{
+img.myImages  {
   display: none;
 }
 
-img.myImages.active {
+.myImages.active {
   display: block;
 }
 
