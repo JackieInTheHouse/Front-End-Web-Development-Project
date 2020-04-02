@@ -45,3 +45,40 @@ function showImages(n) {
   images[imageIndex-1].classList.add("active");
   dots[imageIndex-1].classList.add("active");
 }
+
+/* prev and next script*/
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+prev.addEventListener("click", prevImage);
+next.addEventListener("click", nextImage);
+
+
+function prevImage(n){
+  plusImages(-1);
+}
+
+function nextImage(n){
+  plusImages(1);
+}
+
+/* dots script*/
+const dot1 = document.getElementById("dot1");
+const dot2 = document.getElementById("dot2");
+const dot3 = document.getElementById("dot3");
+
+dot1.addEventListener("click", currentImage1);
+dot2.addEventListener("click", currentImage2);
+dot3.addEventListener("click", currentImage3);
+
+function currentImages1(n) {
+  currentImage(1);
+}
+
+function currentImages2(n) {
+  currentImage(2);
+}
+
+function currentImages3(n) {
+  currentImage(3);
+}
