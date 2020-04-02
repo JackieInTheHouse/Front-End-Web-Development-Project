@@ -46,7 +46,6 @@ function showImages(n) {
   dots[imageIndex-1].classList.add("active");
 }
 
-/* prev and next script*/
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
@@ -71,14 +70,15 @@ dot1.addEventListener("click", currentImage1);
 dot2.addEventListener("click", currentImage2);
 dot3.addEventListener("click", currentImage3);
 
-function currentImages1(n) {
+
+function currentImage1(n) {
   currentImage(1);
 }
 
-function currentImages2(n) {
+function currentImage2(n) {
   currentImage(2);
 }
 
-function currentImages3(n) {
+function currentImage3(n) {
   currentImage(3);
 }
