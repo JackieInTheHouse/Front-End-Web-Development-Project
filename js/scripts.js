@@ -17,10 +17,16 @@ navbarToggle.addEventListener("click", toggleMenu);
 
 function showSlide(n) {
   const activeSlides = document.querySelectorAll(".slideshow-container .slide.active");
+  const activeDots = document.querySelectorAll(".dot.active");
+  const dots = document.querySelectorAll(".dot");
   for (const slide of activeSlides){
     slide.classList.remove("active");
   }
+  for (const dot of activeDots){
+    dot.classList.remove("active");
+  }
   slides[n].classList.add("active");
+  dots[n].classList.add("active");
 }
 
 function showNextSlide() {
@@ -53,12 +59,13 @@ next.addEventListener("click", nextSlide);
 
 function prevSlide(){
   slideIndex -= 1;
-  // slideIndex %= (slides.length);
+  slideIndex += slides.length;
+  slideIndex %= (slides.length);
   showSlide(slideIndex);
 }
 
 function nextSlide(){
   slideIndex += 1;
-  slideIndex %= (slides.length);
+  slideIndex %= slides.length;
   showSlide(slideIndex);
 }
