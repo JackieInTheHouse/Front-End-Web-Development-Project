@@ -9,9 +9,10 @@ html {
 
 body {
   background: #6B8E23;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
+
 /* Static header*/
 header {
   position: fixed;
@@ -20,12 +21,11 @@ header {
 }
 
 /* Nav css section*/
-
 nav {
   display: none;
   flex-direction: column;
   justify-content: center;
-  background:#2F4F4F;
+  background: #2F4F4F;
 
 }
 
@@ -33,21 +33,21 @@ nav a {
   padding: 1em 2em;
   color: #FFFFFF;
   text-decoration: none;
-  display:inline-block;
+  display: inline-block;
   font-size: 1.25em;
   font-weight: bold;
   transition: 0.6s;
 }
 
 nav a:hover {
-  color:#B8860B;
+  color: #B8860B;
 }
 
 .navbar {
-  background:#555;
+  background: #555;
   line-height: 2em;
   text-align: center;
-  color:#039;
+  color: #039;
   font-size: 20px;
   font-weight: bold;
  }
@@ -57,15 +57,13 @@ nav a:hover {
 }
 /* End of Nav css section*/
 
-*{
+* {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
 }
 
-
-
 section {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   flex-direction: column;
   padding-bottom: 200px;
@@ -73,42 +71,39 @@ section {
   margin: auto;
 }
 
-
-
 /* home css section*/
-
 section.home {
   max-width: unset;
   width: 100%;
   padding: 6em 20px;
   background-image: url(../images/awbae.jpg);
-  background-size:cover;
+  background-size: cover;
 }
 
-.home-content{
+.home-content {
  text-align: center;
 }
 
-.home .home-content h6{
-  color:#FFFFFF;
+.home .home-content h6 {
+  color: #FFFFFF;
   font-size: 20px;
   font-weight: 500;
 }
 
-.home .home-content h1{
-  color:#FFFFFF;
+.home .home-content h1 {
+  color: #FFFFFF;
   font-size: 40px;
   font-weight: 600;
 }
 
-.home .home-content h3{
-  color:#008B8B;
+.home .home-content h3 {
+  color: #008B8B;
   font-size: 30px;
   font-weight: 500;
 }
 
 .info {
-  color:#000000;
+  color: #000000;
   font-size: 20px;
   font-weight: 500;
   display: flex;
@@ -120,11 +115,9 @@ section.home {
 .info label {
   padding: 5px;
 }
-
 /*End of Logo home content css section*/
 
 /* Start of Personal Profile css*/
-
 .personal-profile {
   padding: 100px 20px;
   color:#FFFFFF;
@@ -152,14 +145,14 @@ section.home {
 
 .personal-profile h2 {
   color: #000000;
-  margin:0;
+  margin: 0;
   position: relative;
 }
 
 .personal-profile h2::before {
-  content:'';
+  content: '';
   left: 0px;
-  position:absolute;
+  position: absolute;
   height: 2px;
   right: 92%;
   background-color: #FFFF00;
@@ -185,8 +178,8 @@ section.home {
 }
 
 .slide img:hover {
-    transform: scale(1.05);
-    opacity: 0.5;
+  transform: scale(1.05);
+  opacity: 0.5;
 }
 
 .slide.active {
@@ -228,7 +221,7 @@ section.home {
   text-align: center;
 }
 
-.imagetext{
+.imagetext {
   color: #f2f2f2;
   font-size: 14px;
   padding: 8px 12px;
@@ -258,24 +251,22 @@ section.home {
 .dots {
   text-align: center;
 }
-
-
 /* End of Personal Profile css*/
 
 /* Start of Education CSS*/
 .education {
   padding: 100px 20px;
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 .education h2 {
   color: #000000;
-  margin:0;
+  margin: 0;
   position: relative;
 }
 
 .education h2::before {
-  content:'';
+  content: '';
   left: 0px;
   position:absolute;
   height: 2px;
@@ -295,35 +286,34 @@ section.home {
   width: 100%;
   transition: 0.3s;
 }
+
 .education-place img:hover {
   opacity: 0.6;
 }
 
 .text {
-  padding:5px;
+  padding: 5px;
   text-align: center;
   background-color: #708090;
 }
-
 /* End of Education CSS*/
 
 /* Start of Work Experience CSS*/
 .work-experience {
   padding: 100px 20px;
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 .work-experience h2 {
   color: #000000;
-  margin:0;
+  margin: 0;
   position: relative;
-
 }
 
 .work-experience h2::before {
-  content:'';
+  content: '';
   left: 0px;
-  position:absolute;
+  position: absolute;
   height: 2px;
   right: 91%;
   background-color: #FFFF00;
@@ -360,7 +350,7 @@ section.home {
   padding-bottom: 1em;
 }
 
-.work-time .date:last-of-type{
+.work-time .date:last-of-type {
   border: none;
 }
 
@@ -375,7 +365,7 @@ section.home {
 .work-time .date::before {
   content: attr(data-date);
   top: -1em;
-  color:#0000FF;
+  color: #0000FF;
   text-align: left;
   min-width: 12em;
   font-size: 1.2em;
@@ -393,23 +383,22 @@ section.home {
 /* End of Work Experience CSS*/
 
 /* Start of Contact Me CSS*/
-
 .contact-me {
   padding: 100px 20px;
-  color:#FFFFFF;
+  color: #FFFFFF;
   flex-direction: column;
 }
 
 .contact-me h2 {
   color: #000000;
-  margin:0;
+  margin: 0;
   position: relative;
 }
 
 .contact-me h2::before {
   content:'';
   left: 0px;
-  position:absolute;
+  position: absolute;
   height: 2px;
   right: 94%;
   background-color: #FFFF00;
@@ -452,7 +441,6 @@ input[type=submit]:hover {
 /* End of Contact Me CSS*/
 
 /* Start Footer CSS */
-
 .footer {
   background: #FFFFFF;
   text-align: center;
@@ -492,32 +480,29 @@ input[type=submit]:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   color: white;
 }
-
 /* End Footer CSS */
 
-
 /* TABLET STYLES */
-
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
 
-  nav {
-    display:flex;
-    flex-direction: row;
-   }
+nav {
+  display: flex;
+  flex-direction: row;
+}
 
-  .navbar {
-    display: none;
-  }
+.navbar {
+  display: none;
+}
 
-  .home {
-    flex-direction: row;
- }
+.home {
+  flex-direction: row;
+}
 
- body {
-   background: #808000;
- }
+body {
+  background: #808000;
+}
 
 }
 
@@ -525,14 +510,12 @@ input[type=submit]:hover {
 
 
 /* DESKTOP STYLES */
-
 @media screen and (min-width: 1000px) {
 
   /* applies to screens wider than 999px */
 
-  nav {
-      flex-direction: row;
-    }
-
+nav {
+  flex-direction: row;
+}
 
 }

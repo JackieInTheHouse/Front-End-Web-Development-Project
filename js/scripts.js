@@ -20,7 +20,6 @@ navbarToggle.addEventListener("click", toggleMenu);
 
 
 /*Close Menu when click on a link*/
-
 const closeMenu = () => {
   if (menuNav.classList.toggle("navbar-toggle") === true) {
         menuNav.classList.toggle("navbar-toggle");
@@ -33,15 +32,14 @@ experiencepage.addEventListener("click", closeMenu);
 contactpage.addEventListener("click", closeMenu);
 
 /* slide show script*/
-
 function showSlide(n) {
   const activeSlides = document.querySelectorAll(".slideshow-container .slide.active");
   const activeDots = document.querySelectorAll(".dot.active");
   const dots = document.querySelectorAll(".dot");
-  for (const slide of activeSlides){
+  for (const slide of activeSlides) {
     slide.classList.remove("active");
   }
-  for (const dot of activeDots){
+  for (const dot of activeDots) {
     dot.classList.remove("active");
   }
   slides[n].classList.add("active");
@@ -76,14 +74,14 @@ prev.addEventListener("click", prevSlide);
 next.addEventListener("click", nextSlide);
 
 
-function prevSlide(){
+function prevSlide() {
   slideIndex -= 1;
   slideIndex += slides.length;
   slideIndex %= (slides.length);
   showSlide(slideIndex);
 }
 
-function nextSlide(){
+function nextSlide() {
   slideIndex += 1;
   slideIndex %= slides.length;
   showSlide(slideIndex);
