@@ -100,7 +100,7 @@ function submitForm() {
       window.alert("Please fill in the missing field.");
       event.preventDefault();
     } else {
-        window.alert("Your form has been submitted. I will contact you shortly");
+        window.alert("Your form has been submitted. I will contact you shortly. Thank you!");
         event.preventDefault();
     }
 
