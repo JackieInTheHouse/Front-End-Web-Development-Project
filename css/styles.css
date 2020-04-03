@@ -8,10 +8,15 @@ html {
 }
 
 body {
-  /* background: #808000; */
   background: #6B8E23;
   margin:0;
   padding:0;
+}
+/* Static header*/
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 /* Nav css section*/
@@ -50,12 +55,13 @@ nav a:hover {
 .navbar-toggle {
   display: flex;
 }
+/* End of Nav css section*/
 
 *{
   box-sizing: border-box;
   margin:0;
 }
-/* End of Nav css section*/
+
 
 
 section {

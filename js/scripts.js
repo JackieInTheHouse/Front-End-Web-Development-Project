@@ -5,13 +5,32 @@ console.log("hello");
 /* Menu bar script*/
 const navbarToggle = document.getElementById("navbar-toggle");
 const menuNav = document.getElementById("menu-nav");
+const profilepage = document.querySelector("#profilepage");
+const educationpage = document.querySelector("#educationpage");
+const experiencepage = document.querySelector("#experiencepage");
+const contactpage = document.querySelector("#contactpage");
 
+
+/* Created Menu toggle for mobile screen*/
 const toggleMenu = () => {
   menuNav.classList.toggle("navbar-toggle");
 }
 
 navbarToggle.addEventListener("click", toggleMenu);
 
+
+/*Close Menu when click on a link*/
+
+const closeMenu = () => {
+  if (menuNav.classList.toggle("navbar-toggle") === true) {
+        menuNav.classList.toggle("navbar-toggle");
+    }
+}
+
+profilepage.addEventListener("click", closeMenu);
+educationpage.addEventListener("click", closeMenu);
+experiencepage.addEventListener("click", closeMenu);
+contactpage.addEventListener("click", closeMenu);
 
 /* slide show script*/
 
