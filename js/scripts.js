@@ -15,77 +15,50 @@ navbarToggle.addEventListener("click", toggleMenu);
 
 /* slide show script*/
 
-let imageIndex = 1;
-showImages(imageIndex);
-
-function plusImages(n) {
-  showImages(imageIndex += n);
-}
-
-function currentImage(n) {
-  showImages(imageIndex = n);
-}
-
-function showImages(n) {
-  let i;
-  const images = document.getElementsByClassName("myImages");
-  // for(const image in images) {
-  //   const dot = document.createElement('span');
-  //   dot.classList.add('dot');
-  // }
-  // dot.addEventListener
-
-  const dots = document.getElementsByClassName("dot");
-
-  if (n > images.length) {
-    imageIndex = 1}
-  if (n < 1) {
-    imageIndex = images.length}
-  for (i = 0; i < images.length; i++) {
-    images[i].classList.remove("active");
+function showSlide(n) {
+  const activeSlides = document.querySelectorAll(".slideshow-container .slide.active");
+  for (const slide of activeSlides){
+    slide.classList.remove("active");
   }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
-  images[imageIndex-1].classList.add("active");
-  dots[imageIndex-1].classList.add("active");
+  slides[n].classList.add("active");
 }
+
+function showNextSlide() {
+  slideIndex += 1;
+  slideIndex %= (slides.length  - 1);
+  showSlide(slideIndex);
+}
+
+const slides = document.querySelectorAll(".slideshow-container .slide");
+
+slides.forEach((slide, i) => {
+  const dot = document.createElement('span');
+  dot.classList.add('dot');
+  dot.addEventListener('click', ev => {
+    showSlide(i)
+  })
+  dots.appendChild(dot);
+})
+
+let slideIndex = 0;
+showSlide(0);
 
 /* prev and next script*/
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
-prev.addEventListener("click", prevImage);
-next.addEventListener("click", nextImage);
+prev.addEventListener("click", prevSlide);
+next.addEventListener("click", nextSlide);
 
 
-function prevImage(n){
-  plusImages(-1);
+function prevSlide(){
+  slideIndex -= 1;
+  // slideIndex %= (slides.length);
+  showSlide(slideIndex);
 }
 
-function nextImage(n){
-  plusImages(1);
-}
-
-/* dots script*/
-const dot1 = document.getElementById("dot1");
-const dot2 = document.getElementById("dot2");
-const dot3 = document.getElementById("dot3");
-
-dot1.addEventListener("click", currentImage1);
-dot2.addEventListener("click", currentImage2);
-dot3.addEventListener("click", currentImage3);
-
-
-function currentImage1(n) {
-  currentImage(1);
-}
-
-function currentImage2(n) {
-  currentImage(2);
-}
-
-function currentImage3(n) {
-  currentImage(3);
+function nextSlide(){
+  slideIndex += 1;
+  slideIndex %= (slides.length);
+  showSlide(slideIndex);
 }

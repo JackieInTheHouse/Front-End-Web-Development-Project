@@ -166,11 +166,11 @@ section.home {
   margin-top: 50px;
 }
 
-.myImages {
+.slide {
   display: none;
 }
 
-.myImages img {
+.slide img {
   width: 100%;
   max-height: 400px;
   margin-right: 15px;
@@ -178,16 +178,12 @@ section.home {
   transition: 0.3s;
 }
 
-.myImages img:hover {
+.slide img:hover {
     transform: scale(1.05);
     opacity: 0.5;
 }
 
-img.myImages  {
-  display: none;
-}
-
-.myImages.active {
+.slide.active {
   display: block;
 }
 
