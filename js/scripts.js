@@ -5,13 +5,6 @@ console.log("hello");
 /* Menu bar script*/
 const navbarToggle = document.getElementById("navbar-toggle");
 const menuNav = document.getElementById("menu-nav");
-const profilepage = document.querySelector("#profilepage");
-const educationpage = document.querySelector("#educationpage");
-const experiencepage = document.querySelector("#experiencepage");
-const contactpage = document.querySelector("#contactpage");
-
-
-/* Created Menu toggle for mobile screen*/
 const toggleMenu = () => {
   menuNav.classList.toggle("navbar-toggle");
 }
@@ -19,7 +12,11 @@ const toggleMenu = () => {
 navbarToggle.addEventListener("click", toggleMenu);
 
 
-/*Close Menu when click on a link*/
+/*Close Menu when click on a link script*/
+const profilepage = document.querySelector("#profilepage");
+const educationpage = document.querySelector("#educationpage");
+const experiencepage = document.querySelector("#experiencepage");
+const contactpage = document.querySelector("#contactpage");
 const closeMenu = () => {
   if (menuNav.classList.toggle("navbar-toggle") === true) {
         menuNav.classList.toggle("navbar-toggle");
@@ -31,7 +28,8 @@ educationpage.addEventListener("click", closeMenu);
 experiencepage.addEventListener("click", closeMenu);
 contactpage.addEventListener("click", closeMenu);
 
-/* slide show script*/
+
+/* slide show dot and active script*/
 function showSlide(n) {
   const activeSlides = document.querySelectorAll(".slideshow-container .slide.active");
   const activeDots = document.querySelectorAll(".dot.active");
@@ -66,7 +64,7 @@ slides.forEach((slide, i) => {
 let slideIndex = 0;
 showSlide(0);
 
-/* prev and next script*/
+/* slide show prev and next script*/
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
@@ -85,4 +83,25 @@ function nextSlide() {
   slideIndex += 1;
   slideIndex %= slides.length;
   showSlide(slideIndex);
+}
+
+
+/*contact form script*/
+let fname = document.querySelector("#fname");
+let lname = document.querySelector("#lname");
+let email = document.querySelector("#e-mail");
+let subject = document.querySelector("#subject");
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener('submit', submitForm);
+
+function submitForm() {
+    if ( (fname.value.length === 0) ||  (lname.value.length === 0) ||(email.value.length === 0) || (subject.value.length === 0)) {
+      window.alert("Please fill in the missing field.");
+      event.preventDefault();
+    } else {
+        window.alert("Your form has been submitted. I will contact you shortly");
+        event.preventDefault();
+    }
+
 }
