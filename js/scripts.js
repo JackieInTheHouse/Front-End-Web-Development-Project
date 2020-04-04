@@ -18,7 +18,7 @@ const educationpage = document.querySelector("#educationpage");
 const experiencepage = document.querySelector("#experiencepage");
 const contactpage = document.querySelector("#contactpage");
 const closeMenu = () => {
-        menuNav.classList.toggle("navbar-toggle");
+  menuNav.classList.toggle("navbar-toggle");
 }
 
 profilepage.addEventListener("click", closeMenu);
@@ -94,12 +94,12 @@ const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener('submit', submitForm);
 
 function submitForm() {
-    if ( (fname.value.length === 0) ||  (lname.value.length === 0) || (email.value.length === 0) || (subject.value.length === 0)) {
-      window.alert("Please fill in the missing field.");
+  if ((fname.value.length === 0) || (lname.value.length === 0) || (email.value.length === 0) || (subject.value.length === 0)) {
+    window.alert("Please fill in the missing field.");
+    event.preventDefault();
+  } else {
+      window.alert("Your form has been submitted. I will contact you shortly. Thank you!");
       event.preventDefault();
-    } else {
-        window.alert("Your form has been submitted. I will contact you shortly. Thank you!");
-        event.preventDefault();
-    }
+  }
 
 }
