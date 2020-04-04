@@ -1,6 +1,6 @@
 # My website
 
-This is the practice version of CTEC3905 Assignment
+This is CTEC3905 Front-End Web Development Assignment
 
 The website is about my digital CV
 
