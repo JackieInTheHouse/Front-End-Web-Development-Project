@@ -13,10 +13,10 @@ navbarToggle.addEventListener("click", toggleMenu);
 
 
 /*Close Menu when click on a link script*/
-const profilepage = document.querySelector("#profilepage");
-const educationpage = document.querySelector("#educationpage");
-const experiencepage = document.querySelector("#experiencepage");
-const contactpage = document.querySelector("#contactpage");
+const profilepage = document.querySelector("#profile-page");
+const educationpage = document.querySelector("#education-page");
+const experiencepage = document.querySelector("#experience-page");
+const contactpage = document.querySelector("#contact-page");
 const closeMenu = () => {
   menuNav.classList.toggle("navbar-toggle");
 }
@@ -73,7 +73,7 @@ next.addEventListener("click", nextSlide);
 function prevSlide() {
   slideIndex -= 1;
   slideIndex += slides.length;
-  slideIndex %= (slides.length);
+  slideIndex %= slides.length;
   showSlide(slideIndex);
 }
 
