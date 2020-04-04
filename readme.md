@@ -8,10 +8,10 @@ The website is about my digital CV
 
 * Header - Menu
 * Home
-* Section 1 - Personal Profile
-* Section 2 - Education
-* Section 3 - Experience
-* Section 4 - Contact Me
+* Personal Profile
+* Education
+* Experience
+* Contact Me
 * Footer
 
 
@@ -42,4 +42,4 @@ This file contains JavaScript code to interact with the
 
 ## Other
 
-Huge thanks to the lab teachers guidance and help. Amazing course and teachers. 
+Huge thanks to the lab teachers guidance and help. Amazing course and teachers.
