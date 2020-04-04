@@ -83,7 +83,6 @@ function nextSlide() {
   showSlide(slideIndex);
 }
 
-
 /*contact form script*/
 const fname = document.querySelector("#fname");
 const lname = document.querySelector("#lname");
@@ -94,12 +93,11 @@ const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener('submit', submitForm);
 
 function submitForm() {
-  if ((fname.value.length === 0) || (lname.value.length === 0) || (email.value.length === 0) || (subject.value.length === 0)) {
+  if ((fname.value == "") || (lname.value == "") || (email.value == "") || (subject.value == "")) {
     window.alert("Please fill in the missing field.");
     event.preventDefault();
   } else {
       window.alert("Your form has been submitted. I will contact you shortly. Thank you!");
       event.preventDefault();
   }
-
 }
