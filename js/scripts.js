@@ -18,9 +18,7 @@ const educationpage = document.querySelector("#educationpage");
 const experiencepage = document.querySelector("#experiencepage");
 const contactpage = document.querySelector("#contactpage");
 const closeMenu = () => {
-  if (menuNav.classList.toggle("navbar-toggle") === true) {
         menuNav.classList.toggle("navbar-toggle");
-    }
 }
 
 profilepage.addEventListener("click", closeMenu);
