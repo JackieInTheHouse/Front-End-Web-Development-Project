@@ -87,16 +87,16 @@ function nextSlide() {
 
 
 /*contact form script*/
-let fname = document.querySelector("#fname");
-let lname = document.querySelector("#lname");
-let email = document.querySelector("#e-mail");
-let subject = document.querySelector("#subject");
+const fname = document.querySelector("#fname");
+const lname = document.querySelector("#lname");
+const email = document.querySelector("#e-mail");
+const subject = document.querySelector("#subject");
 const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener('submit', submitForm);
 
 function submitForm() {
-    if ( (fname.value.length === 0) ||  (lname.value.length === 0) ||(email.value.length === 0) || (subject.value.length === 0)) {
+    if ( (fname.value.length === 0) ||  (lname.value.length === 0) || (email.value.length === 0) || (subject.value.length === 0)) {
       window.alert("Please fill in the missing field.");
       event.preventDefault();
     } else {
