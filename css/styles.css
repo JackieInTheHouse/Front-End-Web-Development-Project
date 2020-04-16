@@ -124,7 +124,7 @@ section.home {
 
 /* Start of Personal Profile css*/
 .personal-profile {
-  padding: 50px 20px;
+  padding: 80px 20px;
   color:#FFFFFF;
 }
 
@@ -263,7 +263,7 @@ section.home {
 
 /* Start of Education CSS*/
 .education {
-  padding: 50px 20px;
+  padding: 80px 20px;
   color: #FFFFFF;
 }
 
@@ -310,7 +310,7 @@ section.home {
 
 /* Start of Work Experience CSS*/
 .work-experience {
-  padding: 50px 20px;
+  padding: 80px 20px;
   color: #FFFFFF;
 }
 
@@ -402,7 +402,7 @@ section.home {
 
 /* Start of Contact Me CSS*/
 .contact-me {
-  padding: 100px 20px;
+  padding: 80px 20px;
   color: #FFFFFF;
   flex-direction: column;
 }
