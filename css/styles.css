@@ -67,7 +67,7 @@ section {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding-bottom: 200px;
+  /* padding-bottom: 100px; */
   max-width: 800px;
   margin: auto;
 }
@@ -124,7 +124,7 @@ section.home {
 
 /* Start of Personal Profile css*/
 .personal-profile {
-  padding: 100px 20px;
+  padding: 50px 20px;
   color:#FFFFFF;
 }
 
@@ -253,7 +253,7 @@ section.home {
 }
 
 .dot.active {
-  background-color: #B8860B;
+  background-color: #808080;
 }
 
 .dots {
@@ -263,7 +263,7 @@ section.home {
 
 /* Start of Education CSS*/
 .education {
-  padding: 100px 20px;
+  padding: 50px 20px;
   color: #FFFFFF;
 }
 
@@ -304,12 +304,13 @@ section.home {
   padding: 5px;
   text-align: center;
   background-color: #708090;
+  font-family: arial, helvetica, sans-serif;
 }
 /* End of Education CSS*/
 
 /* Start of Work Experience CSS*/
 .work-experience {
-  padding: 100px 20px;
+  padding: 50px 20px;
   color: #FFFFFF;
 }
 
@@ -444,7 +445,7 @@ input[type=text],[type=email], textarea {
 }
 
 input[type=submit] {
-  background-color: #FFD700;
+  background-color: #808080;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -454,7 +455,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #DAA520;
+  background-color: #778899;
 }
 /* End of Contact Me CSS*/
 
