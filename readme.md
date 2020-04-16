@@ -2,7 +2,7 @@
 
 This is CTEC3905 Front-End Web Development Assignment
 
-The website is about my digital CV
+This website is about my digital CV
 
 ## index.html
 
@@ -37,7 +37,7 @@ This file contains JavaScript code to interact with the
 
 3. [Footer Instagram icon background was adapted from here](https://codepen.io/thomasrye/pen/VaRoYv)
 
-4. Most of other content was using w3schools website as tutorial
+4. Most of other contents were using w3schools website and lab exercise as tutorial
 
 
 ## Other
